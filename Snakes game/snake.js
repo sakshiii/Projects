@@ -45,7 +45,9 @@ function init(){
 			var headY = this.cells[0].y;
 
 			if(headX==food.x && headY==food.y){
-				console.log("Food eaten");
+                var audio = new Audio('Assets/chew.mp3');
+                audio.play();
+                console.log("Food eaten");
 				food = getRandomFood();
 				score++;
 
