@@ -85,11 +85,15 @@ function init(){
 
 			if(this.cells[0].y<0 || this.cells[0].x < 0 || this.cells[0].x > last_x || this.cells[0].y > last_y){
                 game_over = true;
+                let aud = new Audio('Assets/collide.mp3');
+                aud.play();                
 			}
             for(let i=3;i<this.cells.length;i++)
             {
                 if(headX==this.cells[i].x && headY==this.cells[i].y)
                     {
+                        let aud = new Audio('Assets/collide.mp3');
+                        aud.play();
                         game_over=true;
                         break;
                     }
@@ -154,7 +158,6 @@ function getRandomFood(){
 	var food = {
 		x:foodX,
 		y:foodY,
-		color:"red",
 	}
 	return food
 
@@ -162,7 +165,8 @@ function getRandomFood(){
 
 function gameloop(){
 	if(game_over==true){
-		clearInterval(f);
+        clearInterval(f);
+
 		alert("Game Over , your score is :"+score);
 		return;
 	}
