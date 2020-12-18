@@ -84,7 +84,14 @@ function init(){
 			if(this.cells[0].y<0 || this.cells[0].x < 0 || this.cells[0].x > last_x || this.cells[0].y > last_y){
                 game_over = true;
 			}
-
+            for(let i=3;i<this.cells.length;i++)
+            {
+                if(headX==this.cells[i].x && headY==this.cells[i].y)
+                    {
+                        game_over=true;
+                        break;
+                    }
+            }
 		}
 
 	};
