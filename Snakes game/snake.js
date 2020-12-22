@@ -18,7 +18,7 @@ function init(){
 	food = getRandomFood();
 
 	snake = {
-		init_len:5,
+		init_len:3,
 		color:"black",
 		cells:[],
 		direction:"right",
@@ -134,12 +134,12 @@ function draw(){
 	pen.clearRect(0,0,W,H);
 	snake.drawSnake();
 
-	pen.fillStyle = food.color;
+	
 	pen.drawImage(food_img,food.x*cs,food.y*cs,cs,cs);
 
-	pen.drawImage(trophy,18,20,cs,cs);
-	pen.fillStyle = "blue";
-	pen.font = "40px Roboto"
+	pen.drawImage(trophy,20,20,cs,cs);
+	pen.fillStyle = "Red";
+	pen.font = "30px Roboto"
 	pen.fillText(score,50,50);
 
 	
