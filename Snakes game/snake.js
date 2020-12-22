@@ -118,7 +118,7 @@ function init(){
 		else{
 			snake.direction = "up";
 		}
-		console.log(snake.direction);
+		//console.log(snake.direction);
 	}
 
 
