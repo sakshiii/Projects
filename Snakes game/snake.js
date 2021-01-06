@@ -145,7 +145,7 @@ function draw(){
 	
 	pen.drawImage(food_img,food.x*(cs-3),food.y*(cs-3),cs-3,cs-3);
 
-	pen.drawImage(trophy,20,20,cs,cs);
+	pen.drawImage(trophy,20,20,cs-3,cs-3);
 	pen.fillStyle = "Red";
 	pen.font = "30px Roboto"
 	pen.fillText(score,50,50);
@@ -182,6 +182,6 @@ function gameloop(){
 	update();
 }
 
-init();
+//init();
 
 var f = setInterval(gameloop,150);
