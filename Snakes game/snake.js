@@ -32,8 +32,16 @@ function init(){
 		drawSnake:function(){
 
 			for(var i=0;i<this.cells.length;i++){
-				pen.fillStyle = this.color;
-				pen.fillRect(this.cells[i].x*cs,this.cells[i].y*cs,cs-3,cs-3);
+				//pen.fillStyle = this.color;
+				var rect = canvas.getBoundingClientRect();
+    			var posx = this.cells[i].x*cs;
+    			var posy = this.cells[i].y*cs;
+
+			    pen.fillStyle = "#000000";
+    		    pen.beginPath();
+    			pen.arc(posx, posy, 35, cs-3, cs-3 * Math.PI);
+    			pen.fill();
+				//pen.fillRect(this.cells[i].x*cs,this.cells[i].y*cs,cs-3,cs-3);
 			}
 		},
 
