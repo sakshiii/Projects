@@ -39,7 +39,7 @@ function init(){
 
 			    pen.fillStyle = "#000000";
     		    pen.beginPath();
-    			pen.arc(posx, posy, 35, cs-3, cs-3 * Math.PI);
+    			pen.arc(posx, posy, 38, cs-3, 2 * Math.PI*0.75);
     			pen.fill();
 				//pen.fillRect(this.cells[i].x*cs,this.cells[i].y*cs,cs-3,cs-3);
 			}
