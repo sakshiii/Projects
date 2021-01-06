@@ -1,14 +1,13 @@
 body{
-    background-color: aqua;
+    background-color: black;
 }
 #mycanvas{
-    /*background-image: url("Assets/sea.jpg"); */
-    border:20px solid rgb(0, 119, 128);
-    margin-left: 500px;
-    /*background-repeat: no-repeat;
-      background-attachment: fixed;
-    background-size: cover; */
-    background-color: white;
+    background-image: url("Assets/backg.jfif"); 
+    border:20px solid grey;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    /*background-color: white; */
 }
 #btn{
     height: 450 px;

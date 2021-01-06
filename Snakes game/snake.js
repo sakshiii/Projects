@@ -4,7 +4,7 @@ function init(){
 	canvas = document.getElementById('mycanvas');
 	W = H = canvas.width = canvas.height = 700;
 	pen = canvas.getContext('2d');
-	cs = 66;
+	cs = 60;
 	game_over = false;
 	
 
@@ -176,22 +176,20 @@ function gameloop(){
         
 
 		alert("Game Over , your score is :"+score);
-		//document.getElementById('btn').clicked = true
-		if(document.getElementById('btn').clicked == true)
-			{
-				clearInterval(f);
-				init();
-			}
-		else{
-			clearInterval(f);
-			return;
-		}
+		//document.getElementById('btn').clicked = false
+		// if(document.getElementById('btn').clicked == true)
+		// 	{
+		// 		score=0
+		// 		game_over=false;
+		// 		init();
+		// 	}
+		clearInterval(f);
+		return;
 			
 	}
 	draw();
 	update();
 }
 
-//init();
 
 var f = setInterval(gameloop,160);
