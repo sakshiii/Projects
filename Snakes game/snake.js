@@ -143,7 +143,7 @@ function draw(){
 	snake.drawSnake();
 
 	
-	pen.drawImage(food_img,food.x*cs,food.y*cs,cs,cs);
+	pen.drawImage(food_img,food.x*(cs-3),food.y*(cs-3),cs-3,cs-3);
 
 	pen.drawImage(trophy,20,20,cs,cs);
 	pen.fillStyle = "Red";
