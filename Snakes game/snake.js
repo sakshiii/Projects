@@ -87,7 +87,7 @@ function init(){
 
 			this.cells.unshift({x: nextX,y:nextY});
 
-			/*Write a Logic that prevents snake from going out*/
+			/*prevents snake from going out*/
 			var last_x = Math.round(W/cs);
 			var last_y = Math.round(H/cs);
 
