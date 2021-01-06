@@ -2,7 +2,7 @@ score = 0;
 
 function init(){
 	canvas = document.getElementById('mycanvas');
-	W = H = canvas.width = canvas.height = 1000;
+	W = H = canvas.width = canvas.height = 700;
 	pen = canvas.getContext('2d');
 	cs = 66;
 	game_over = false;
@@ -173,10 +173,20 @@ function getRandomFood(){
 
 function gameloop(){
 	if(game_over==true){
-        clearInterval(f);
+        
 
 		alert("Game Over , your score is :"+score);
-		return;
+		//document.getElementById('btn').clicked = true
+		if(document.getElementById('btn').clicked == true)
+			{
+				clearInterval(f);
+				init();
+			}
+		else{
+			clearInterval(f);
+			return;
+		}
+			
 	}
 	draw();
 	update();
@@ -184,4 +194,4 @@ function gameloop(){
 
 //init();
 
-var f = setInterval(gameloop,150);
+var f = setInterval(gameloop,160);

@@ -1,0 +1,21 @@
+body{
+    background-color: aqua;
+}
+#mycanvas{
+    /*background-image: url("Assets/sea.jpg"); */
+    border:20px solid rgb(0, 119, 128);
+    margin-left: 500px;
+    /*background-repeat: no-repeat;
+      background-attachment: fixed;
+    background-size: cover; */
+    background-color: white;
+}
+#btn{
+    height: 450 px;
+    width: 150px;
+    align-content: center;
+    background-color: brown;
+    color: cornsilk;
+    text-size-adjust: 20px;
+    padding: 20;
+}
