@@ -19,7 +19,7 @@ function init(){
 
 	snake = {
 		init_len:3,
-		color:"black",
+		color:"cornsilk",
 		cells:[],
 		direction:"right",
 
@@ -37,7 +37,7 @@ function init(){
     			var posx = this.cells[i].x*cs;
     			var posy = this.cells[i].y*cs;
 
-			    pen.fillStyle = "#000000";
+			    pen.fillStyle = this.color;
     		    pen.beginPath();
     			pen.arc(posx, posy, 38, cs-3, 2 * Math.PI*0.75);
     			pen.fill();
