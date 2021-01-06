@@ -10,7 +10,7 @@ function init(){
 
 	//Create a Image Object for food
 	food_img = new Image();
-	food_img.src = "Assets/fish.jfif";
+	food_img.src = "Assets/apple.png";
 
 	trophy = new Image();
 	trophy.src = "Assets/trophy.png";
