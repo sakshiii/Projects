@@ -174,7 +174,6 @@ function getRandomFood(){
 function gameloop(){
 	if(game_over==true){
         
-
 		alert("Game Over , your score is :"+score);
 		//document.getElementById('btn').clicked = false
 		// if(document.getElementById('btn').clicked == true)
